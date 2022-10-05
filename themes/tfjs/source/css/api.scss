@@ -1,6 +1,9 @@
+
 $mdc-theme-primary: #677282;
 
 @import "material-components-web/material-components-web";
+@import "@material/typography/mdc-typography";
+
 
 $muted-text-col: #616161;
 $dark-text-col: #212121;
@@ -113,7 +116,8 @@ header {
     }
 
     .header {
-      // @include mdc-typography("headline1");
+
+      @include mdc-typography("headline6");
       margin-top: 28px;
 
       .version-string {
@@ -168,7 +172,7 @@ header {
 
       .heading {
         .title {
-          // @include mdc-typography("headline");
+          @include mdc-typography("headline6");
           margin-top: 64px;
           border-bottom: 4px solid #0277BD;
           font-weight: 700;
@@ -182,10 +186,9 @@ header {
           font-size: 16px;
         }
       }
-
       .subheading {
         .title {
-          // @include mdc-typography("headline");
+          @include mdc-typography("headline6");
           margin-top: 64px;
 
           border-bottom: 1px solid #0277BD;
